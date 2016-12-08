@@ -1,0 +1,3 @@
+create or replace view resume_view as
+select a.email, a.first_name, a.last_name, r.resume_name from resume r
+join account a on a.account_id = r.user_account_id;
